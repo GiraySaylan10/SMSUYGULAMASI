@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mesajOlustur.mesajOlusturFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mesaj Adı" />
+
+        <EditText
+            android:id="@+id/mesajAdi"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="Mesaj" />
+
+        <EditText
+            android:id="@+id/mesaj"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/mesajOlusturButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MESAJ OLUŞTUR" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mesajlar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMesaj"
+            android:layout_width="match_parent"
+            android:layout_height="391dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="#CC2222"
+            android:gravity="center"
+            android:text="201913709099 - Giray SAYLAN" />
+
+    </LinearLayout>
+</FrameLayout>

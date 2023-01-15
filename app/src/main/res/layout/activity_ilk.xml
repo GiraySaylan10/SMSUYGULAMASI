@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".IlkActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="414dp"
+        android:layout_height="61dp"
+        android:background="#D10A0A"
+        android:gravity="center"
+        android:text="201913709099 - Giray SAYLAN"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_giris"
+        android:layout_width="166dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="login"
+        android:text="GİRİŞ YAP"
+        app:layout_constraintBottom_toTopOf="@+id/btn_kayit"
+        app:layout_constraintEnd_toEndOf="@+id/btn_kayit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_kayit" />
+
+    <Button
+        android:id="@+id/btn_kayit"
+        android:layout_width="164dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="132dp"
+        android:onClick="register"
+        android:text="KAYIT OL"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="219dp"
+        android:layout_height="187dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_giris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278"
+        app:srcCompat="@drawable/kartal" />
+</androidx.constraintlayout.widget.ConstraintLayout>
